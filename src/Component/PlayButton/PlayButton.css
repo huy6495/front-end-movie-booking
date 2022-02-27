@@ -1,0 +1,43 @@
+svg#play {
+  width: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+svg#play #triangle {
+  fill: rgba(22, 22, 22, 0);
+  transition: 500ms;
+  transform-origin: 50% 50%;
+}
+svg#play:hover #triangle {
+  fill: #fa5238;
+  transform-origin: 50% 50%;
+}
+
+svg #lineOne,
+svg #lineTwo {
+  opacity: 0;
+  transform-origin: 50% 50%;
+  transition: 1.2s ease;
+}
+
+svg:hover #lineOne {
+  opacity: 0.9;
+
+  transform: rotate(260deg);
+  -webkit-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+  transform-origin: 50% 50%;
+}
+
+svg:hover #lineTwo {
+  opacity: 0.9;
+
+  transform: rotate(-450deg);
+  transform-origin: 50% 50%;
+}
